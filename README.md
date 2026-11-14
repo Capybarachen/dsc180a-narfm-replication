@@ -56,9 +56,15 @@ Unguided: mixed classes.
 
 ## What matches and what does not
 
-Accuracy matches the paper in every setting (within 1.4 points), and so does the noise alignment trade-off:
-larger λ gives higher accuracy but worse FID. The FIDs of RFM only and NA-RFM are about twice the paper's because
-I used 256 images per class instead of 2,048, and FID is biased upward with fewer images. My noise-alignment FIDs
-are lower than the paper's, which I cannot yet explain. Times differ because of the GPU and batch size.
+### What matches
 
+The accuracy is very close to the paper's, with a maximum difference of only 1.4 percentage points. NA-RFM is 96.6%, the same as the paper; noise alignment gives 61.8% and 79.8%, and the paper gives 62% and 80%.
+
+The noise alignment trade-off also matches: the larger λ, the higher the accuracy, but FID gets worse. For example, when λ = 8, the images are more saturated and look more alike. The order of the times also matches the paper.
+
+### What does not match
+
+The FID of RFM only and NA-RFM is about twice the paper's, probably because I only used 256 images per class, while the paper used 2,048. When fewer images are used, FID is usually higher.
+
+My noise alignment FID is lower than the paper's, but I'm not sure why yet. I also can't directly compare the times because I used a different GPU and batch size.
 
