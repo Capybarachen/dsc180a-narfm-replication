@@ -1,0 +1,6 @@
+setting,"accuracy (ours, %)","accuracy (paper, %)","FID (ours, 256/class)","FID (paper, 2048/class)","s/image (ours, 4070 Ti SUPER, batch 64)","s/batch of 16 (paper, A100)"
+unguided,10.0,,157.9,,0.135,
+NA-only-lambda3,61.8,62.0,91.0,99.0,0.08,5.8
+NA-only-lambda8,79.8,80.0,111.0,120.0,0.08,5.8
+RFM-only,96.2,94.8,94.6,40.3,0.159,6.8
+NA-RFM,96.6,96.6,94.2,41.4,0.136,6.2
