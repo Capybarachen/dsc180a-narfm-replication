@@ -61,7 +61,4 @@ larger λ gives higher accuracy but worse FID. The FIDs of RFM only and NA-RFM a
 I used 256 images per class instead of 2,048, and FID is biased upward with fewer images. My noise-alignment FIDs
 are lower than the paper's, which I cannot yet explain. Times differ because of the GPU and batch size.
 
-## Use of AI
 
-I used Claude. I ran all experiments and wrote the section 5a loops. Claude helped adapt the notebook to Windows,
-wrote the code for 5b–5d, and drafted this README, which I reviewed.
