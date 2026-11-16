@@ -48,7 +48,7 @@ RFM only: correct, but duller.
 Unguided: mixed classes.
 ![Unguided](figures/grid_unguided.png)
 
-## What matches and what does not
+## Comparison with the Paper
 
 ### What matches
 
