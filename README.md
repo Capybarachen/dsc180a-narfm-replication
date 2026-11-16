@@ -15,12 +15,11 @@ To get the following results, just run the notebook from beginning to end. Secti
 
 ## Results
 
-**PCA (cat and ship):** the ship mean shows sky above water; the cat mean is a flat blur, since cat photos vary more.
+**PCA (cat and ship):** This figure shows the mean images and the first eight PCA directions for cats and ships. The mean image of ships is blue at the top and grayer at the bottom, while the mean image of cats is more uniform in color.
+
+**RFM AUC per class:** airplane 0.943, automobile 0.965, bird 0.879, cat 0.863, deer 0.893, dog 0.884, frog 0.950, horse 0.897, ship 0.950, truck 0.942. The cat class has the lowest AUC, while the automobile class has the highest.
 
 ![PCA](figures/pca_cat_ship.png)
-
-**RFM AUC per class:** airplane 0.943, automobile 0.965, bird 0.879, cat 0.863, deer 0.893, dog 0.884,
-frog 0.950, horse 0.897, ship 0.950, truck 0.942. Animals are hardest to separate.
 
 **Table 2:**
 
