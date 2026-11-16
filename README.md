@@ -5,7 +5,7 @@ Po-Hua Chen · DSC 180A D32 · Replication of Table 2 in Wang, Belkin and Wang (
 
 ## Environment Setup
 
-I ran all the experiments on my own computer. It is a Windows computer with an RTX 4070 Ti SUPER GPU. All the code is in the notebook `narfm_cifar10_starter_windows (1).ipynb`.
+I ran all the experiments on my own computer. It is a Windows computer with an RTX 4070 Ti SUPER GPU. All the code is in the notebook `narfm_cifar10_starter_windows.ipynb`.
 
 Before running the notebook, you need to install Python 3.10 or above, PyTorch with CUDA support, and Git. The first cell of the notebook will install the other packages and download the code from the paper: na-rfm (commit `8e9619b`) and TFG (commit `f8d17f3`). It will also fix two problems with newer package versions: the name of the CIFAR-10 dataset and a SciPy import. The next cells will download the pretrained CIFAR-10 diffusion model and CIFAR-10 images.
 
