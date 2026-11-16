@@ -25,10 +25,10 @@ To get the following results, just run the notebook from beginning to end. Secti
 
 | Setting | Accuracy (ours) | Accuracy (paper) | FID (ours, 256/class) | FID (paper, 2,048/class) | Time (ours, s/image) | Time (paper, s/16 images) |
 |---|---|---|---|---|---|---|
-| Unguided | 10.0% | – | 157.9 | – | 0.135 | – |
+| Unguided | 10.0% | – | 157.9 | – | 0.136 | – |
 | Noise alignment, λ = 3 | 61.8% | 62% | 91.0 | 99 | 0.080 | 5.8 |
 | Noise alignment, λ = 8 | 79.8% | 80% | 111.0 | 120 | 0.080 | 5.8 |
-| RFM only | 96.2% | 94.8% | 94.6 | 40.3 | 0.159 | 6.8 |
+| RFM only | 96.2% | 94.8% | 94.6 | 40.3 | 0.160 | 6.8 |
 | NA-RFM | 96.6% | 96.6% | 94.2 | 41.4 | 0.136 | 6.2 |
 
 **Grids (first 16 images of every class):**
