@@ -3,20 +3,15 @@
 Po-Hua Chen · DSC 180A D32 · Replication of Table 2 in Wang, Belkin and Wang (2026),
 [General and Efficient Steering of Diffusion Models](https://arxiv.org/abs/2602.11395).
 
-## Setup
+## Environment Setup
 
-- **Install:** Python 3.10+ with `torch` (CUDA), `torchvision`, `numpy`, `matplotlib` and `git`. The first cell
-  installs the rest with pip.
-- **Code:** the notebook clones [na-rfm](https://github.com/isotrivial/na-rfm) at commit `8e9619b` and
-  [TFG](https://github.com/YWolfeee/Training-Free-Guidance) at commit `f8d17f3`, and makes two fixes: the CIFAR-10
-  dataset name (`uoft-cs/cifar10`) and a SciPy import.
-- **Model and data:** the notebook downloads OpenAI's improved DDPM U-Net for CIFAR-10 (checked by MD5) and
-  CIFAR-10 from Hugging Face.
-- **Windows:** I ran it on an RTX 4070 Ti SUPER, so I used UTF-8 for files and command output, `os.pathsep` in
-  `PYTHONPATH`, and skipped the `bash` smoke test.
+I ran all the experiments on my own computer. It is a Windows computer with an RTX 4070 Ti SUPER GPU. All the code is in the notebook `narfm_cifar10_starter_windows (1).ipynb`.
 
-**Each figure and table:** run all cells of `narfm_cifar10_starter_windows (1).ipynb`. Section 5 makes
-`rfm_auc.json` and the PCA figure (5a), the five settings (5b), `table2_replication.csv` (5c) and the grids (5d).
+Before running the notebook, you need to install Python 3.10 or above, PyTorch with CUDA support, and Git. The first cell of the notebook will install the other packages and download the code from the paper: na-rfm (commit `8e9619b`) and TFG (commit `f8d17f3`). It will also fix two problems with newer package versions: the name of the CIFAR-10 dataset and a SciPy import. The next cells will download the pretrained CIFAR-10 diffusion model and CIFAR-10 images.
+
+The original starter notebook was written for Colab, so I made some modifications to make it run on Windows. I used UTF-8 to read files and command output, used Windows' path separator in `PYTHONPATH`, and skipped the smoke test in section 3, which requires bash.
+
+To get the following results, just run the notebook from beginning to end. Section 5 contains RFM directions and AUC (5a), five experimental settings (5b), accuracy, FID and time calculations (5c), as well as the results table, PCA figure, and generated image grids (5d).
 
 ## Results
 
